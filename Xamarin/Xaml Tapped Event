@@ -1,5 +1,0 @@
-<StackLayout>
-    <StackLayout.GestureRecognizers>
-        <TapGestureRecognizer Tapped="StackLayout_Tapped"/>
-    </StackLayout.GestureRecognizers>
-</StackLayout>
