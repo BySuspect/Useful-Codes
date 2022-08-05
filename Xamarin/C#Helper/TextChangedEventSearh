@@ -1,7 +1,7 @@
         private void OnTextChanged(object sender, TextChangedEventArgs e)
         {
             if (!String.IsNullOrEmpty(e.NewTextValue))
-               [List View Adı].ItemsSource = [yerelde tanımlı itemsSource elementi].Where(x => x[eğer varsa .item ismi].ToLower().StartsWith(e.NewTextValue.ToLower())).OrderBy(x => x).ToList();
+               [List View Name].ItemsSource = [Collection].Where(x => x[.item name].ToLower().StartsWith(e.NewTextValue.ToLower())).OrderBy(x => x).ToList();
             else
-                [List View Adı].ItemsSource = [yerelde tanımlı itemsSource elementi];
+                [List View Name].ItemsSource = [Collection];
         }
