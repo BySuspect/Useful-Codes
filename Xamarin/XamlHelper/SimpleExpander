@@ -3,11 +3,14 @@ xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 //on normal using
 <xct:Expander>
     <xct:Expander.Header>
-        <!-- Header -->
-        
+        <!--  Header  -->
+        <StackLayout />
     </xct:Expander.Header>
-            <!-- Content -->
-            
+    <xct:Expander.Content>
+        <StackLayout>
+            <!--  Content  -->
+         </StackLayout>
+    </xct:Expander.ContentTemplate>
 </xct:Expander>
 
 
@@ -16,12 +19,13 @@ xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 <xct:Expander>
     <xct:Expander.Header>
         <!--  Header  -->
-
+        <StackLayout />
     </xct:Expander.Header>
     <xct:Expander.ContentTemplate>
         <DataTemplate>
-            <!--  Template  -->
-
+            <StackLayout>
+                <!--  Data Template  -->
+            </StackLayout>
         </DataTemplate>
     </xct:Expander.ContentTemplate>
 </xct:Expander>
