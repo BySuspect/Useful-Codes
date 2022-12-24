@@ -1,0 +1,40 @@
+     <ScrollView>
+        <StackLayout x:Name="test" BindableLayout.ItemsSource="{Binding MyItems}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        BackgroundColor="red"
+                        BorderColor="White"
+                        CornerRadius="15">
+                        <StackLayout>
+                            <Label FontSize="Large" TextColor="White">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding bolum}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label
+                                FontSize="Caption"
+                                Text="{Binding date}"
+                                TextColor="LightGray" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
+    
+    
+    
+        ObservableCollection<MyClass> MyItems = new ObservableCollection<MyClass>
+        {
+            new MyClass
+                {
+                    Item=1,
+                }
+        };
+        public class MyClass
+        {
+            public int Item { get; set; }
+        }
