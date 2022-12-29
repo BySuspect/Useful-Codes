@@ -12,7 +12,6 @@
                         HorizontalOptions="Center"
                         VerticalOptions="Center">
                         <ActivityIndicator
-                            x:Name="LoodingActivity"
                             HorizontalOptions="Center"
                             IsRunning="{Binding Source={x:Reference Loodinglayout}, Path=IsVisible}"
                             VerticalOptions="Center"
