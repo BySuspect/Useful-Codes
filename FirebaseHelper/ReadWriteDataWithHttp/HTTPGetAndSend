@@ -21,10 +21,17 @@
             {
                 return null;
             }
-        }
-        
+        } 
+
     public class Veriler //Json Converter Helper
     {
         public string testData { get; set; }
         public string Name { get; set; }
     }
+
+    //Send data
+            var httpClient = new HttpClient();
+            string requestBody = JsonConvert.SerializeObject(new { Test = "Test", ID = 1 });
+            HttpContent content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+            var res = await httpClient.PostAsync("https://[firebassename].firebaseio.com/.json", content);
+   
