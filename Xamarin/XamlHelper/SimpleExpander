@@ -10,7 +10,7 @@ xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
         <StackLayout>
             <!--  Content  -->
          </StackLayout>
-    </xct:Expander.ContentTemplate>
+    </xct:Expander.Content>
 </xct:Expander>
 
 
