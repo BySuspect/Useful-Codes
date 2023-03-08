@@ -1,10 +1,10 @@
 class Sifreleme
         {
             // herhangi birşey olabilir
-            private const string passPhrase = "YazilimBilsoft";
+            private const string passPhrase = "pass";
 
             // herhangi birşey olabilir
-            private const string saltValue = "BilsoftYazılım";
+            private const string saltValue = "saltypass";
 
             // SHA1 ya da MD5
             private const string hashAlgorithm = "SHA1";
