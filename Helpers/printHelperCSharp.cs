@@ -1,4 +1,3 @@
-
 private void PrintHelpPage()
 {
 // Create a WebBrowser instance. 

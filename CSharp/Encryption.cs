@@ -1,4 +1,3 @@
-```c#
 class Sifreleme
 {
     // herhangi birşey olabilir
@@ -84,4 +83,3 @@ class Sifreleme
             return SifreCoz(cipherText);
     }
 }
-```

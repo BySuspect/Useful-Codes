@@ -1,0 +1,6 @@
+<Frame
+    xct:TouchEffect.NativeAnimation="true"
+    xct:TouchEffect.NativeAnimationColor="#2EFFCCA3"
+    xct:TouchEffect.PressedAnimationDuration="500"
+    xct:TouchEffect.PressedOpacity="0.6"
+    xct:TouchEffect.PressedScale="0.98"/>

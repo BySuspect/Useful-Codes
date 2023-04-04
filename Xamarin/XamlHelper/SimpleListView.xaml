@@ -1,0 +1,25 @@
+<ListView HasUnevenRows="True">
+   <ListView.Header>
+       <StackLayout>
+          <!-- Header -->
+       </StackLayout>
+   </ListView.Header>
+
+   <ListView.ItemsSource>
+       <x:Array Type="{x:Type local:---Veriler}">
+           <local:---Veriler />
+       </x:Array>
+   </ListView.ItemsSource>
+
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <Frame>
+                    <StackLayout>
+                        <!-- Template -->
+                    </StackLayout>
+                </Frame>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>

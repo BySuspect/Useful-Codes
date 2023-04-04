@@ -1,0 +1,36 @@
+<Frame
+    Margin="30,0"
+    BackgroundColor="White"
+    CornerRadius="15"
+    VerticalOptions="Center">
+    <StackLayout>
+        <Label
+            x:Name="lblPopupTitle"
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="Title"
+            TextColor="Black"
+            VerticalOptions="Start" />
+        <Label
+            x:Name="lblPopupContent"
+            FontSize="18"
+            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis elit sit amet augurutrum, nec vestibulum tortor aliquet. Vestibulum eleifend vulputate maximus. Nam vel convallis loremVivamus ut hendrerit augue, in convallis lorem. Interdum et malesuada fames ac ante ipsum primis ifaucibus"
+            TextColor="Black" />
+        <StackLayout HorizontalOptions="End" Orientation="Horizontal">
+            <Button
+                x:Name="btnOnayla"
+                BackgroundColor="Transparent"
+                HorizontalOptions="End"
+                Text="Ok"
+                TextColor="Black"
+                VerticalOptions="End" />
+            <Button
+                x:Name="btnIptal"
+                BackgroundColor="Transparent"
+                HorizontalOptions="End"
+                Text="Cancel"
+                TextColor="Black"
+                VerticalOptions="End" />
+        </StackLayout>
+    </StackLayout>
+</Frame>
