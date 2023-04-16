@@ -4,18 +4,6 @@
             <x:Array Type="{x:Type local:MangaItems}">
                 <local:MangaItems bolum="1" />
                 <local:MangaItems bolum="2" />
-                <local:MangaItems bolum="3" />
-                <local:MangaItems bolum="4" />
-                <local:MangaItems bolum="5" />
-                <local:MangaItems bolum="6" />
-                <local:MangaItems bolum="7" />
-                <local:MangaItems bolum="8" />
-                <local:MangaItems bolum="9" />
-                <local:MangaItems bolum="10" />
-                <local:MangaItems bolum="11" />
-                <local:MangaItems bolum="12" />
-                <local:MangaItems bolum="13" />
-                <local:MangaItems bolum="14" />
             </x:Array>
         </BindableLayout.ItemsSource>
         <BindableLayout.ItemTemplate>
