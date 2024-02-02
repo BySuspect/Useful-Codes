@@ -1,2 +1,1 @@
-
-* https://api.ipify.org/ easy get ip adres
+- https://api.ipify.org?format=json easy get ip adres
