@@ -1,4 +1,6 @@
+```
 ffmpeg -i "video_url" -vf "ass=subtitle.ass" -c:v h264_nvenc -preset p1 -b:v 2M -c:a aac -b:a 192k -s 1280x720 "./video.mp4"
+```
 
 Explanation of the Command:
 -i "video_url": Specifies the input video URL.
@@ -16,5 +18,10 @@ output.mp4: Specifies the output file name.
 
 
 
+```
 ffmpeg -i "https://example.com/example.vtt" ./example.ass"
+```
+```
 ffmpeg -i "https://example.com/example.m3u8" -vf "ass=./example.ass" -c:v h264_nvenc -preset p1 -b:a 192k "./video.mp4"
+```
+
