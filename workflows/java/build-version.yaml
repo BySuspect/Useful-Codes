@@ -1,0 +1,41 @@
+name: Build Version
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        env:
+            BUILD_VERSION: "version-tag"
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+              with:
+                  ref: v${{ env.BUILD_VERSION }}
+
+            - name: Set up JDK
+              uses: actions/setup-java@v3
+              with:
+                  distribution: "temurin"
+                  java-version: "17"
+
+            - name: Set up Gradle
+              uses: gradle/gradle-build-action@v2
+
+            - name: Build the mod
+              run: ./gradlew build
+              
+            - name: Remove *-dev.jar
+              run: rm ./build/libs/*-dev.jar || true
+              
+            - uses: "marvinpinto/action-automatic-releases@latest"
+              with:
+                  repo_token: "${{ secrets.GITHUB_TOKEN }}"
+                  automatic_release_tag: "v${{ env.BUILD_VERSION }}-build"
+                  prerelease: false
+                  title: "Release v${{ env.BUILD_VERSION }}-build"
+                  files: |
+                      ./build/libs/*.jar          
